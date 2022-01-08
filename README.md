@@ -1,5 +1,10 @@
 # voyage-tasks
 
+# User stories 
+Food business owner: https://gist.github.com/npizzigati/122606b48206c522cb78865469de2482
+Consumer: https://gist.github.com/npizzigati/31a1892d1672fea5943f0a37f9e61ae9
+
+
 Your project's `readme` is as important to success as your code. For 
 this reason you should put as much care into its creation and maintenance
 as you would any other component of the application.
