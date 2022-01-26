@@ -1,8 +1,11 @@
 import React from "react";
 import { Route, Link } from "react-router-dom";
-import LandingPage from './LandingPage/LandingPage';
+import LandingPage from "./LandingPage/LandingPage";
+import Demo from "./Demo/Demo";
 import UserDashboard from "./UserDashboard/UserDashboard";
+import UserNav from "./UserNav/UserNav";
 import BusinessDashboard from "./BusinessDashboard/BusinessDashboard";
+import BusinessNav from "./BusinessDashboard/BusinessDashboard";
 import Footer from "./Footer/Footer";
 import ApiServices from "./apiServices";
 import TokenServices from "./tokenServices";

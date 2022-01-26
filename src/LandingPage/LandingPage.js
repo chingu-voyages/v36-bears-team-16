@@ -1,34 +1,36 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import TokenServices from "../tokenServices";
-import Login from "../Login/Login";
-import SignUp from "./SignUp/SignUp";
-import Demo from "./Demo/Demo";
+import { useHistory } from "react-router-dom";
 
 function LandingPage() {
+    let history = useHistory();
+
+    function handleSignIn() {
+        history.push("/login");
+    }
+
+    function handleSignUp() {
+        history.push("/register");
+    }
+
+    function handleDemo() {
+        history.push("/demo");
+    }
+
     return (
-        <div>
-            {/* <Login /> */}
-            <nav>
-        <ul id="menu">
-          {TokenServices.hasAuthToken() && (
-            <li>
-              <Link to="/sign-in">Sign In</Link>
-            </li>
-          )}
-          {TokenServices.hasAuthToken() && (
-            <li>
-              <Link to="/grocery-List">Sign Up</Link>
-            </li>
-          )}
-          {!TokenServices.hasAuthToken() && (
-            <li>
-              <Link to="/demo">Demo</Link>
-            </li>
-          )}          
-        </ul>
-      </nav>
-        </div>
+        <section className="main">
+            <header role="banner" className="landing-header">
+                <h1>Lonche</h1>
+            </header>
+            <div className="button-base-center center-button" onClick={handleSignIn} type="button">
+                <button className="center">Sign In</button>
+            </div>
+            <div className="button-base-center center-button" onClick={handleSignUp} type="button">
+                <button className="center">Sign Up</button>
+            </div>
+            <div className="button-base-center center-button" onClick={handleDemo} type="button">
+                <button className="center">Demo</button>
+            </div>
+        </section>
     );
 }
 
