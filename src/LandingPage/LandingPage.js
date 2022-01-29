@@ -18,9 +18,9 @@ function LandingPage() {
 
     return (
         <section className="main">
-            <header role="banner" className="landing-header">
+            {/* <header role="banner" className="landing-header">
                 <h1>Lonche</h1>
-            </header>
+            </header> */}
             <div className="button-base-center center-button" onClick={handleSignIn} type="button">
                 <button className="center">Sign In</button>
             </div>
